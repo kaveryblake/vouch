@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vouch: third-party risk assessments</title>
+<meta name="description" content="Tier vendors by inherent risk, score security questionnaires, and track findings, evidence, and remediation in one place.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vouch: third-party risk assessments">
+<meta property="og:description" content="Tier vendors by inherent risk, score security questionnaires, and track findings, evidence, and remediation in one place.">
+<meta property="og:url" content="https://kaveryblake.github.io/vouch/">
+<meta property="og:image" content="https://kaveryblake.github.io/vouch/screenshots/dashboard.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Cpath d='M14 2.5 24 6v7.5c0 6-4.3 10.3-10 12-5.7-1.7-10-6-10-12V6z' fill='white' stroke='%2316221E' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M8.6 14.6c1.6 1 2.8 2.3 3.8 3.8 2.2-4.2 4.6-7.2 7.2-9' fill='none' stroke='%23B3302A' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=localStorage.getItem("vouch.theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#/" aria-label="Vouch home">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 2.5 24 6v7.5c0 6-4.3 10.3-10 12-5.7-1.7-10-6-10-12V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.6 14.6c1.6 1 2.8 2.3 3.8 3.8 2.2-4.2 4.6-7.2 7.2-9" fill="none" stroke="var(--red)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Vouch
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#/" data-nav="dash">Portfolio</a>
+      <a href="#/vendors" data-nav="vendors">Vendors</a>
+      <a href="#/findings" data-nav="findings">Findings</a>
+      <a href="#/rules" data-nav="rules">Rules</a>
+    </nav>
+    <span class="spacer"></span>
+    <button class="btn ghost small hide-sm" id="themeBtn" type="button" aria-label="Toggle dark mode">Theme</button>
+  </div>
+</header>
+<main id="main"></main>
+<footer class="foot"><div class="wrap">
+  <span>Vouch, a third-party risk assessment tool. Built by <a href="https://github.com/kaveryblake">Keenan Blake</a>. Companion to <a href="https://kaveryblake.github.io/tickmark/">Tickmark</a>. <a href="https://github.com/kaveryblake/vouch">Source on GitHub</a>.</span>
+  <span>All vendors in the sample portfolio are fictional. Data stays in this browser.</span>
+</div></footer>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="dTitle"></aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="config.js"></script>
+<script src="engine.js"></script>
+<script src="sample-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

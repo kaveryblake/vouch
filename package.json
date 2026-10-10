@@ -1,0 +1,10 @@
+{
+  "name": "vouch",
+  "version": "1.0.0",
+  "description": "Third-party risk assessment: vendor tiering, weighted questionnaire scoring, findings, and remediation tracking.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  }
+}
